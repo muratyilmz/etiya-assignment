@@ -1,4 +1,5 @@
-import 'package:auto_size_text/auto_size_text.dart';
+import 'package:etiya_space_x/main.dart';
+import 'package:etiya_space_x/src/config/router/app_router.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:sizer/sizer.dart';
@@ -63,7 +64,11 @@ class HomeContentWidget extends StatelessWidget {
         return SizedBox(
           height: 21.h,
           child: GestureDetector(
-            onTap: () => print('object'),
+            onTap: () => router.push(DetailsRouter(
+                name: name,
+                details: details,
+                largeImage: largeImage,
+                date: date)),
             child: Card(
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20)),
@@ -78,15 +83,25 @@ class HomeContentWidget extends StatelessWidget {
                   children: [
                     SizedBox(
                       height: 20.h,
-                      width: 20.w,
+                      width: 25.w,
                       child: Image.network(largeImage),
                     ),
-                    AutoSizeText(
-                      maxFontSize: 16,
-                      minFontSize: 8,
-                      name,
-                      maxLines: 3,
-                      style: const TextStyle(fontSize: 12),
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(0, 15, 0, 0),
+                      height: 20.h,
+                      width: 50.w,
+                      child: ListTile(
+                        title: Text(
+                          name,
+                          style: const TextStyle(fontSize: 18),
+                        ),
+                        subtitle: Text(
+                          details,
+                          overflow: TextOverflow.ellipsis,
+                          maxLines: 3,
+                          style: const TextStyle(fontSize: 14),
+                        ),
+                      ),
                     ),
                     const Icon(Icons.chevron_right),
                   ],

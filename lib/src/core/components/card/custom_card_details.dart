@@ -29,31 +29,9 @@ class _CardDetailsState extends State<CardDetails> {
             child: Image.network(widget.playerImage!),
           ),
           Text('${widget.playerDescription}'),
-          IconButton(
-              onPressed: widget.onTapIcon,
-              icon: const Icon(Icons.chevron_right))
+          const Icon(Icons.chevron_right)
         ],
       ),
     );
   }
-
-  // Widget _content() {
-  //   return BlocBuilder<SpaceXLaunchBloc, SpaceXLaunchState>(
-  //     builder: (context, state) {
-  //       if (state is SpaceXLaunchHasData) {
-  //         List data = state.getSpaceXList;
-  //         Text(state.getSpaceXList[0].name!);
-  //       } else if (state is SpaceXLaunchEmpty) {
-  //         Container(
-  //           color: Colors.red,
-  //         );
-  //       } else if (state is SpaceXLaunchError) {
-  //         Container(
-  //           color: Colors.yellow,
-  //         );
-  //       }
-  //       return const SizedBox.shrink();
-  //     },
-  //   );
-  // }
 }
