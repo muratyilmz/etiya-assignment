@@ -1,7 +1,7 @@
 // ignore_for_file: avoid_print
 
-import '../../constant/url_constants.dart';
-import '../../network/network_menager.dart';
+import '../../../core/constant/url_constants.dart';
+import '../../../core/network/network_menager.dart';
 import '../model/space_x_model/space_x_model.dart';
 
 abstract class SpaceXRemoteDataSource {

@@ -1,7 +1,6 @@
 import 'package:animated_search_bar/animated_search_bar.dart';
 
 import 'package:flutter/material.dart';
-import 'package:sizer/sizer.dart';
 
 import '../../../config/color/app_color.dart';
 
@@ -16,7 +15,8 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AnimatedSearchBar(
-      labelStyle: TextStyle(fontSize: 20),
+      searchStyle: const TextStyle(color: Colors.white),
+      labelStyle: const TextStyle(fontSize: 20),
       label: 'Find Your Launcher!',
       cursorColor: ColorTones.snowWhite,
       searchDecoration: InputDecoration(
@@ -25,7 +25,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
           alignLabelWithHint: true,
           fillColor: ColorTones.lightBlue,
           border: InputBorder.none),
-      onChanged: (value) => print('asd'),
+      onChanged: (value) => print('test'),
     );
   }
 

@@ -3,9 +3,10 @@
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
 
+import '../../../core/network/network_exception.dart';
 import '../../domain/entities/space_x_entities.dart';
 import '../../domain/repositories/space_x_repository.dart';
-import '../../network/network_exception.dart';
+
 import '../datasources/remote_datasources.dart';
 
 class SpaceXRemoteDataSourceImpl implements SpaceXRepository {

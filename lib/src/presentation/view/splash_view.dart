@@ -1,6 +1,5 @@
 import 'dart:async';
 
-import 'package:etiya_space_x/src/core/constant/application_constants.dart';
 import 'package:etiya_space_x/src/core/constant/image_constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';

@@ -1,8 +1,8 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 
-import '../../core/domain/entities/space_x_entities.dart';
-import '../../core/domain/usecases/space_x_launch.dart';
+import '../domain/entities/space_x_entities.dart';
+import '../domain/usecases/space_x_launch.dart';
 
 part 'space_x_launch_event.dart';
 part 'space_x_launch_state.dart';

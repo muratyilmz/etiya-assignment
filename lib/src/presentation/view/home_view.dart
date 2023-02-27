@@ -7,7 +7,9 @@ import '../bloc/space_x_launch_bloc.dart';
 import '../widget/home_bloc.dart';
 
 class HomeView extends StatefulWidget {
-  const HomeView({super.key});
+  const HomeView({
+    super.key,
+  });
 
   @override
   State<HomeView> createState() => _HomeViewState();
@@ -25,7 +27,9 @@ class _HomeViewState extends State<HomeView> {
     return Scaffold(
         appBar: AppBar(
           backgroundColor: ColorTones.title,
-          title: const CustomAppBar(title: 'Find Your Launcher!'),
+          title: const CustomAppBar(
+            title: 'Find Your Launcher!',
+          ),
         ),
         body: const HomeBlocWidget());
   }

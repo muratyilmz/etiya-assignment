@@ -14,9 +14,6 @@ import 'src/config/router/app_router.dart';
 import 'src/injector.dart' as di;
 
 Future<void> main() async {
-  //TODO
-  // TODO NETWORK MENAGER
-  //TODO PULL TO REFRESH
   WidgetsFlutterBinding.ensureInitialized();
   await dotenv.load(fileName: '.env');
   await di.init();

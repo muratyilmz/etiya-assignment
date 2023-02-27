@@ -1,11 +1,11 @@
 import 'package:etiya_space_x/src/presentation/bloc/space_x_launch_bloc.dart';
+import 'package:etiya_space_x/src/presentation/data/datasources/remote_datasources.dart';
+import 'package:etiya_space_x/src/presentation/data/repositories/space_x_repositories_impl.dart';
+import 'package:etiya_space_x/src/presentation/domain/repositories/space_x_repository.dart';
+import 'package:etiya_space_x/src/presentation/domain/usecases/space_x_launch.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:get_it/get_it.dart';
 
-import 'core/data/datasources/remote_datasources.dart';
-import 'core/data/repositories/space_x_repositories_impl.dart';
-import 'core/domain/repositories/space_x_repository.dart';
-import 'core/domain/usecases/space_x_launch.dart';
 import 'core/network/network_menager.dart';
 
 final injector = GetIt.instance;

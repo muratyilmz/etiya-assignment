@@ -1,5 +1,6 @@
 import 'package:equatable/equatable.dart';
-import 'package:etiya_space_x/src/core/data/model/space_x_model/patch.dart';
+import 'package:etiya_space_x/src/presentation/data/model/space_x_model/patch.dart';
+
 import 'package:json_annotation/json_annotation.dart';
 
 import '../../../domain/entities/space_x_entities.dart';
