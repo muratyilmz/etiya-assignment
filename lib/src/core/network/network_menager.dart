@@ -31,7 +31,9 @@ class CoreDio with DioMixin implements Dio {
 }
 
 class NetworkManager {
-  final Dio dio = CoreDio(BaseOptions(
-    baseUrl: ApplicationConstants.baseUrl,
-  ));
+  final Dio dio = CoreDio(
+    BaseOptions(
+      baseUrl: ApplicationConstants.baseUrl,
+    ),
+  );
 }

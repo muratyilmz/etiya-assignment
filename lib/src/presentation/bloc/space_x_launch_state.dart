@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable
+
 part of 'space_x_launch_bloc.dart';
 
 abstract class SpaceXLaunchState extends Equatable {
@@ -14,8 +16,8 @@ class SpaceXLaunchEmpty extends SpaceXLaunchState {
 }
 
 class SpaceXLaunchHasData extends SpaceXLaunchState {
-  final List<SpaceXEntities> getSpaceXList;
-  const SpaceXLaunchHasData(this.getSpaceXList);
+  List<SpaceXEntities> getSpaceXList;
+  SpaceXLaunchHasData(this.getSpaceXList);
 }
 
 class SpaceXLaunchError extends SpaceXLaunchState {

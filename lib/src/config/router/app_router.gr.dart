@@ -17,7 +17,7 @@ class _$AppRouter extends RootStackRouter {
 
   @override
   final Map<String, PageFactory> pagesMap = {
-    SplashRouter.name: (routeData) {
+    SplashRoute.name: (routeData) {
       return AdaptivePage<dynamic>(
         routeData: routeData,
         child: const SplashView(),
@@ -48,7 +48,7 @@ class _$AppRouter extends RootStackRouter {
   @override
   List<RouteConfig> get routes => [
         RouteConfig(
-          SplashRouter.name,
+          SplashRoute.name,
           path: '/',
         ),
         RouteConfig(
@@ -64,14 +64,14 @@ class _$AppRouter extends RootStackRouter {
 
 /// generated route for
 /// [SplashView]
-class SplashRouter extends PageRouteInfo<void> {
-  const SplashRouter()
+class SplashRoute extends PageRouteInfo<void> {
+  const SplashRoute()
       : super(
-          SplashRouter.name,
+          SplashRoute.name,
           path: '/',
         );
 
-  static const String name = 'SplashRouter';
+  static const String name = 'SplashRoute';
 }
 
 /// generated route for

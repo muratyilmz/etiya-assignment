@@ -10,3 +10,8 @@ abstract class SpaceXLaunchEvent extends Equatable {
 class GetAllSpaceXList extends SpaceXLaunchEvent {
   const GetAllSpaceXList();
 }
+
+class GetAllSpaceXFilter extends SpaceXLaunchEvent {
+  final String value;
+  const GetAllSpaceXFilter(this.value);
+}

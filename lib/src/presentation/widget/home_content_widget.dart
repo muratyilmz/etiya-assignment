@@ -1,14 +1,16 @@
 // ignore_for_file: unused_local_variable
 
 import 'package:etiya_space_x/src/core/components/refresh_indicator/refresh_indicator.dart';
+import 'package:etiya_space_x/src/core/constant/image_constants.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+
 import 'package:sizer/sizer.dart';
 
 import '../../../main.dart';
 import '../../config/color/app_color.dart';
 import '../../config/router/app_router.dart';
-import '../../core/constant/application_constants.dart';
+
 import '../bloc/space_x_launch_bloc.dart';
 
 class HomeContentWidget extends StatefulWidget {
@@ -63,14 +65,14 @@ class _HomeContentWidgetState extends State<HomeContentWidget> {
             if (state.getSpaceXList[index].links!.patch!.small != null) {
               smallImage = state.getSpaceXList[index].links!.patch!.small!;
             } else {
-              smallImage = ApplicationConstants.noSmallUrl;
+              smallImage = ImagesConstant.noSmallUrl;
             }
             //Null Safety LargeImage
             String largeImage;
             if (state.getSpaceXList[index].links!.patch!.large != null) {
               largeImage = state.getSpaceXList[index].links!.patch!.large!;
             } else {
-              largeImage = ApplicationConstants.noLargeUrl;
+              largeImage = ImagesConstant.noLargeUrl;
             }
 
             //Null Safety DateUtc

@@ -1,8 +1,10 @@
 import 'package:animated_search_bar/animated_search_bar.dart';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../config/color/app_color.dart';
+import '../../../presentation/bloc/space_x_launch_bloc.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   const CustomAppBar({
@@ -25,7 +27,9 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
           alignLabelWithHint: true,
           fillColor: ColorTones.lightBlue,
           border: InputBorder.none),
-      onChanged: (value) => print('test'),
+      onChanged: (value) {
+        context.read<SpaceXLaunchBloc>().add(GetAllSpaceXFilter(value));
+      },
     );
   }
 

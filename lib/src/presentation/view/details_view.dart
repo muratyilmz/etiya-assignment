@@ -1,6 +1,8 @@
 import 'package:etiya_space_x/src/config/color/app_color.dart';
 import 'package:flutter/material.dart';
 
+//TODO VeryGood Analys
+
 class DetailsView extends StatefulWidget {
   final String? name;
   final String? date;

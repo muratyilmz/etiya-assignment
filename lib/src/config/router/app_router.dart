@@ -15,7 +15,6 @@ part 'app_router.gr.dart';
   routes: <AutoRoute>[
     AutoRoute(
       path: '/',
-      name: 'SplashRouter',
       page: SplashView,
       initial: true,
     ),

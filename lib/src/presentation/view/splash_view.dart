@@ -34,9 +34,9 @@ class _SplashViewState extends State<SplashView> {
 
   @override
   Widget build(BuildContext context) {
-    return Material(
-      color: ColorTones.softGreen,
-      child: Center(
+    return Scaffold(
+      backgroundColor: ColorTones.softGreen,
+      body: Center(
         child: Padding(
           padding: EdgeInsets.all(7.w),
           child: SvgPicture.asset(
